@@ -47,11 +47,11 @@ function Header() {
                 >
                   Shop &#9660;
                   {isDropDownOpen && (
-                    <ul className="absolute left-0 mt-2 bg-white shadow-lg border rounded-md w-48 ">
-                      <li className="p-2 hover:bg-buttonColor">
+                    <ul className="absolute left-0 mt-2 bg-white shadow-lg border rounded-xl w-48">
+                      <li className="p-2 hover:bg-buttonColor mb-2 rounded-md">
                         <Link to="/explore-pet">Explore Our Pets</Link>
                       </li>
-                      <li className="p-2 hover:bg-buttonColor">
+                      <li className="p-2 hover:bg-buttonColor rounded-md">
                         <Link to="/store">Food For Pets</Link>
                       </li>
                     </ul>
@@ -116,36 +116,67 @@ function Header() {
           <div className="md:hidden">
             <ul className="space-y-1 px-2 pb-3 pt-2">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/#home"
                   className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/#about"
                   className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/#services"
                   className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/#contact"
                   className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li
+                className="relative transition-all cursor-pointer delay-75 ease-in-out  font-medium space-y-1 px-2 pb-3 pt-2"
+                onClick={toggleDropDown}
+              >
+                Shop &#9660;
+                {isDropDownOpen && (
+                  <ul className="absolute left-0 mt-2 bg-white shadow-md border rounded-lg w-48 text-sm z-20">
+                    <li className="p-2 hover:bg-buttonColor mb-2 rounded-md">
+                      <Link to="/explore-pet" className="">
+                        Explore Our Pets
+                      </Link>
+                    </li>
+                    <li className="p-2 hover:bg-buttonColor mb-2 rounded-md">
+                      <Link to="/store" className="">
+                        Food For Pets
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+              </li>
+
+              <li className="block px-3 py-2 rounded-md text-base font-medium">
+                <Link to="/sign-in">
+                  <OrangeBtn>Sign In</OrangeBtn>
+                </Link>
+              </li>
+              <li className="block px-3 py-2 rounded-md text-base font-medium">
+                <Link to="/sign-up">
+                  <DarkBtn>Sign Up</DarkBtn>
+                </Link>
               </li>
             </ul>
           </div>
