@@ -9,7 +9,6 @@ function HeroSection() {
       className="flex flex-col md:flex-row items-center justify-between bg-bgImg py-16 bg-no-repeat bg-contain max-w-19xl mx-auto sm:px-6 lg:px-8"
       id="home"
     >
-      {/* Left Side - Image */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <img
           src="/img/heroimg.jpg"
@@ -18,7 +17,6 @@ function HeroSection() {
         />
       </div>
 
-      {/* Right Side - Heading and Description */}
       <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-10 bg-white p-8 rounded-xl shadow-lg">
         <h1 className=" text-heading font-Inter text-3xl md:text-4xl font-semibold mb-4">
           Welcome to BeaknWhiskers!

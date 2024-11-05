@@ -151,7 +151,7 @@ function Header() {
                 className="relative transition-all cursor-pointer delay-75 ease-in-out  font-medium space-y-1 px-2 pb-3 pt-2"
                 onClick={toggleDropDown}
               >
-                Shop &#9660;
+                Our Store &#9660;
                 {isDropDownOpen && (
                   <ul className="absolute left-0 mt-2 bg-white shadow-md border rounded-lg w-48 text-sm z-20">
                     <li className="p-2 hover:bg-buttonColor mb-2 rounded-md">
